@@ -24,7 +24,7 @@
    <template>
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
       <div class="container">
-        <router-link to="/" class="navbar-brand">Gym App</router-link>
+        <router-link to="/" class="navbar-brand">Fit Pro GYm</router-link>
   
         <button
           class="navbar-toggler"
