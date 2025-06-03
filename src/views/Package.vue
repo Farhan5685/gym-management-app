@@ -37,10 +37,10 @@
   const router = useRouter()
   const userStore = useUserStore()
   
-  const packages = ref([
-    { id: 1, name: 'Basic Plan', duration: '1 Month', price: '$30' },
-    { id: 2, name: 'Pro Plan', duration: '3 Months', price: '$80' },
-    { id: 3, name: 'Elite Plan', duration: '6 Months', price: '$150' },
+  const packages =ref([
+    { id: 1, name:'Basic Plan',duration:'1 Month', price: '3000PKR' },
+    { id: 2, name:'Pro Plan',duration: '3 Months', price: '5000PKR' },
+    { id: 3, name:'Elite Plan', duration: '6 Months', price: '8000PKR' },
   ])
   
   function selectPackage(pkg) {
