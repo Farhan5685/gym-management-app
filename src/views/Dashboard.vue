@@ -81,22 +81,22 @@ function formatDuration(ms) {
   return `${hours}h ${minutes}m`
 }
 
-// Filter attendance for current month
+// filter attendanxe for xurrent month
 const now = new Date()
 const currentYear = now.getFullYear()
 const currentMonth = now.getMonth()
 
-const attendanceThisMonth = computed(() => {
+const attendanceThisMonth= computed(() => {
   if (!user?.attendance) return []
   return user.attendance.filter((rec) => {
-    const d = new Date(rec.date)
-    return d.getFullYear() === currentYear && d.getMonth() === currentMonth
+  const d=new Date(rec.date)
+   return d.getFullYear()===currentYear && d.getMonth() === currentMonth
   })
 })
+//sahow the attendaxe
+const attendanceDays =computed(()=> attendanceThisMonth.value.length)
 
-const attendanceDays = computed(()=> attendanceThisMonth.value.length)
-
-const totalDuration = computed(()=> {
+const totalDuration=computed(()=> {
   return attendanceThisMonth.value.reduce((acc, rec) => {
     const dur = getDuration(rec)
     return acc + dur
