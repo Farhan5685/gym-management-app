@@ -4,7 +4,7 @@
         <h2 class="text-center mb-4">Login</h2>
         <form @submit.prevent="handleLogin">
           <div class="mb-3">
-            <input v-model="email" type="email" class="form-control" placeholder="Email" required />
+            <input v-model="email" type="email" class="form-control" placeholder="email" required />
           </div>
           <div class="mb-3">
             <input v-model="password" type="password" class="form-control" placeholder="Password" required />
@@ -15,7 +15,7 @@
               <input type="checkbox" class="form-check-input" id="rememberMe" v-model="rememberMe" />
               <label class="form-check-label" for="rememberMe">Remember Me</label>
             </div>
-            <a href="#" @click.prevent="handleForgotPassword" class="text-decoration-none">Forgot Password?</a>
+            <a href="#" @click.prevent="handleForgotPassword" class="text-decoration-none">Fogot Password?</a>
           </div>
   
           <button type="submit" class="btn btn-primary w-100">Login</button>
