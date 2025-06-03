@@ -34,8 +34,8 @@
   import { useRouter } from 'vue-router'
   import { useUserStore } from '@/store/user'
   
-  const router = useRouter()
-  const userStore = useUserStore()
+  const router =useRouter()
+  const userStore =useUserStore()
   
   const packages =ref([
     { id: 1, name:'Basic Plan',duration:'1 Month', price: '3000PKR' },
