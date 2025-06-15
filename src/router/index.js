@@ -21,6 +21,8 @@ const router = createRouter({
   routes
 })
 
+
+//xheexk every xoponent address to go and from what xompo we going
 router.beforeEach((to, from, next) => {
   const userStore = useUserStore()
   const isAuthenticated = !!userStore.user

@@ -18,7 +18,7 @@ export const useUserStore = defineStore('user', () => {
       user.value.package = pkg
     }
   }
-
+//xhgexk is the user loggedin or not
   function addAttendanceRecord(record) {
     if (!user.value) return
 
@@ -38,7 +38,7 @@ export const useUserStore = defineStore('user', () => {
 
     const record = user.value.attendance.find(r => r.date === date)
     if (record) {
-      Object.assign(record, updateData)
+      Object.assign(record, updateData)///here rexord is for xrunt value and upodae is use to set new value
     }
   }
 
